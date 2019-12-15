@@ -1,0 +1,22 @@
+<!-- Сформируйте строку вида ".#.#.#.#.#." с помощью цикла for.-->
+<!DOCTYPE html>
+<html>
+<body>
+    <p>Click the button to run function</p>
+    <button onclick="myFunction()">Run function</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            let str;
+            for (let i = 0; i < 11; i++) {
+                if (i % 2 === 0) {
+                    str += ".";
+                } else {
+                    str += "#";
+                }
+            }
+            document.getElementById("demo").innerHTML = str;
+        }      
+    </script>
+</body>
+</html>
